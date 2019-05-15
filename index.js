@@ -3,14 +3,14 @@ function takeANumber(line, name) {
   return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 
-let ourLine = [] 
+let ourLine = []
 takeANumber(ourLine) -> 1
-let ourLine = [1] 
+let ourLine = [1]
 takeANumber(ourLine) -> 2
 [1,2]
-nowServing(ourLine) -> 1 
-[2] 
-nowServing(ourLine) -> 2 
+nowServing(ourLine) -> 1
+[2]
+nowServing(ourLine) -> 2
 []
 takeANumber(ourLine) -> 3
 [3]
