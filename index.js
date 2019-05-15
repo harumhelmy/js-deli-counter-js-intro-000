@@ -3,6 +3,23 @@ function takeANumber(line, name) {
   return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 
+let ourLine = [] 
+takeANumber(ourLine) -> 1
+let ourLine = [1] 
+takeANumber(ourLine) -> 2
+[1,2]
+nowServing(ourLine) -> 1 
+[2] 
+nowServing(ourLine) -> 2 
+[]
+takeANumber(ourLine) -> 3
+[3]
+
+function takeANumber(ourLine) { 
+  ourLine.push(1)
+  return ourLine[ourLine.length-1]
+}
+
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length == 0) {
     return "There is nobody waiting to be served!"
