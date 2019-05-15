@@ -5,7 +5,7 @@ function takeANumber(line, name) {
 
 let ourLine = []
 takeANumber(ourLine) -> 1
-let ourLine = [1]
+[1]
 takeANumber(ourLine) -> 2
 [1,2]
 nowServing(ourLine) -> 1
@@ -15,10 +15,12 @@ nowServing(ourLine) -> 2
 takeANumber(ourLine) -> 3
 [3]
 
-function takeANumber(ourLine) { 
+function takeANumber(ourLine) {
   ourLine.push(1)
   return ourLine[ourLine.length-1]
 }
+
+
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length == 0) {
